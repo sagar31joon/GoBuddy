@@ -1,0 +1,7 @@
+{
+  "name": "GoBuddy",
+  "description": "The ultimate sports partner finder. Find teammates, coaches, and entertainment buddies near you with a unified map and feed experience.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
