@@ -213,7 +213,7 @@ const AuthScreen: React.FC<AuthScreenProps> = ({ onLogin }) => {
                             {otp.map((digit, idx) => (
                                 <TextInput
                                     key={idx}
-                                    ref={(ref) => (otpInputRefs.current[idx] = ref)}
+                                    ref={(ref) => { if (ref) otpInputRefs.current[idx] = ref; }}
                                     style={[styles.otpInput, digit && styles.otpInputFilled]}
                                     value={digit}
                                     onChangeText={(text) => handleOtpChange(idx, text)}

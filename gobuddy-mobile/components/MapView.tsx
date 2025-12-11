@@ -117,9 +117,7 @@ const MapViewComponent: React.FC<MapViewComponentProps> = ({ posts }) => {
 
     const selectedPost = selectedPin ? filteredPosts.find(p => p.id === selectedPin) : null;
 
-    if (chatUser) {
-        return <ChatWindow user={chatUser} onClose={() => setChatUser(null)} />;
-    }
+
 
     return (
         <View style={styles.container}>
@@ -347,6 +345,14 @@ const MapViewComponent: React.FC<MapViewComponentProps> = ({ posts }) => {
                     </View>
                 </View>
             </Modal>
+
+            {/* Chat Window Overlay */}
+            {chatUser && (
+                <ChatWindow
+                    user={chatUser}
+                    onClose={() => setChatUser(null)}
+                />
+            )}
         </View>
     );
 };

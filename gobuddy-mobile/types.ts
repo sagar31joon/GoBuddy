@@ -24,7 +24,7 @@ export interface Post {
   date: string; // ISO date string
   locationType: 'live' | 'manual';
   locationName: string;
-  skillLevel?: 'Beginner' | 'Intermediate' | 'Advanced' | 'All Levels';
+  skillLevel?: 'Beginner' | 'Intermediate' | 'Advanced' | 'Pro' | 'All Levels';
   splitBill: boolean;
   likes: number;
   comments: number;

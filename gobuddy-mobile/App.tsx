@@ -336,6 +336,7 @@ function AppContent({
             sport: 'General'
           }}
           onClose={() => setChatPartner(null)}
+          initialMode="expanded"
         />
       )}
     </View>
